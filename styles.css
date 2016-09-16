@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  }
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+header {
+  position: relative; /*for absolute children */
+  height: 523px;
+  background-image: url('https://unsplash.it/1300/523');
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 96, 172, 0.6);
+}
+
+nav {
+  position: relative;
+  padding-top: 10px;
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+.brand {
+  padding-left: 200px;
+  font-family: 'Oswald';
+}
+.company-name {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+}
+header h1, header h3 {
+  position: relative;
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+h1 {
+  font-size: 98px;
+  text-transform: uppercase;
+  top: 64px;
+  color: white;
+}
+.profile-sidebar {
+  float: right;
+  width: 276px;
+}
+.bottom-section {
+  clear: both;
+}
+li > a {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  margin: 8px;
+}
+.main-nav {
+  float: right;
+  margin-right: 169px;
+  margin-bottom: 10px;
+}
+
+/* Aside section styling */
+
+.profile-sidebar {
+  text-align: -webkit-center;
+}
+
+.author-social-media {
+  text-align: center;
+}
+aside > img {
+  border-radius: 50%;
+  height: 81px;
+  width: 81px;
+}
+.ad img {
+  height: 295px;
+  width: 275px;
+}
+#sidebar-author-name {
+  color: #0065A9;
+}
+#sidebar-social-media {
+  color: #98A4AD;
+}
+.ad p {
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: right;
+  color:  #B3C1CA;
+}
+.sidebar-heading h6 {
+  font-family: 'Oswald';
+  font-size: 15px;
+  color: #005CA6;
+  text-transform: uppercase;
+}
+.sidebar-heading p {
+  font-family: 'Open Sans';
+  color: #A2B3BE;
+  font-size: 10px;
+}
+
+/* Blog body styling */
+.main {
+  height: 730px;
+}
+h2 {
+  color: #183C54;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 59px;
+  padding-left: 37px;
+  text-align: center;
+}
+p {
+  font-family: 'Open Sans';
+  color: #788288;
+  font-size: 16px;
+}
+.author-tag {
+  font-family: 'Open Sans';
+  font-size: 10px;
+}
+.blue {
+  color: #00639F;
+}
+p > span {
+  color: #A9B9C2;
+}
+.underline {
+  text-decoration: underline;
+}
+.author-image {
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+}
+.author-name {
+  display: inline-block;
+  font-size: 10px;
+}
+.blog-post {
+  width: 815px;
+  height: 630px;
+  line-height: 26px;
+}
+
+/* bottom section styling */
