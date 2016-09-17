@@ -146,7 +146,7 @@ aside > img {
 }
 .sidebar-heading h6 {
   font-family: 'Oswald';
-  font-size: 15px;
+  font-size: 17px;
   color: #005CA6;
   text-transform: uppercase;
   text-align: left;
@@ -155,9 +155,11 @@ h6 p {
   text-align: left;
 }
 .sidebar-heading p {
+  text-align: left;
   font-family: 'Open Sans';
   color: #A2B3BE;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 23px;
 }
 
 /* Blog body styling */
@@ -220,11 +222,13 @@ p > span {
   background-color: #545E63;
   color: white;
 }
-
+.button {
+  border: 1px solid transparent;
+}
 
 /* bottom section styling */
 .bottom-section {
-  margin-top: 228px;
+  margin-top: 166px;
   border-top: 1px solid #858B8E;
 }
 .bottom-photos {
@@ -259,7 +263,8 @@ p > span {
   font-family: 'Oswald';
   text-transform: uppercase;
   text-align: center;
-  font-size: 60px;
+  font-size: 62px;
+  padding-top: 27px;
 }
 .copyright {
   background-color: #033550;
@@ -277,4 +282,44 @@ p > span {
 }
 .copyright nav ul {
   color: #A2B3BE;
+  }
+  /* Hover classes */
+  .about:hover {
+    color: white;
+  }
+  .search:hover {
+    color: white;
+  }
+  #sidebar-author-name:hover {
+    text-decoration: underline;
+  }
+  #twitter:hover {
+    text-decoration: underline;
+  }
+  #fb:hover {
+    text-decoration: underline;
+  }
+  #insta:hover {
+    text-decoration: underline;
+  }
+  .ad p:hover {
+    color: #033550;
+  }
+  .author-name:hover {
+    text-decoration: underline;
+  }
+  .comments:hover {
+    background-color: #006FAE;
+  }
+  .read-later:hover {
+    background-color: #006FAE;
+  }
+  .share-post:hover {
+    background-color: #006FAE;
+  }
+  .sidebar-heading h6:hover {
+    color: #033550;
+  }
+  .company-name:hover {
+    color: white;
   }
