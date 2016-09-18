@@ -232,6 +232,7 @@ p > span {
   border-top: 1px solid #858B8E;
 }
 .bottom-photos {
+  position: relative;
   display: block;
   clear: both;
 }
@@ -253,10 +254,10 @@ p > span {
   width: 48px;
   float: left;
 }
-.bottom-photos div span {
-  position: absolute;
-  left: 0px;
-  width: 100%;
+.bottom-photos div h2 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 1px;
 }
 .bottom-section h3 {
   color: #033550;
