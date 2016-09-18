@@ -164,6 +164,9 @@ h6 p {
   color: #A2B3BE;
   font-size: 14px;
   line-height: 23px;
+  position: relative;
+  bottom: 35px;
+  right: 3px;
 }
 
 /* Blog body styling */
@@ -187,8 +190,8 @@ p {
   font-family: 'Open Sans';
   font-size: 10px;
   position: relative;
-  bottom: 59px;
-  left: 172px;
+  bottom: 56px;
+  left: 200px;
   word-spacing: 3px;
 }
 .blue {
@@ -215,7 +218,7 @@ p > span {
   line-height: 27px;
   margin-left: 163px;
   position: relative;
-  bottom: 75px;
+  bottom: 66px;
   word-spacing: 0px;
 }
 .faux-buttons {
@@ -253,9 +256,17 @@ p > span {
   position: relative;
   top: 54px;
 }
+#chic{
+text-decoration: underline;
+color: #A2B3BE;
+}
+#aliqua {
+text-decoration: underline;
+color: #006FAE;
+}
 /* bottom section styling */
 .popular-posts {
-  height: 145px;
+  height: 144px;
 }
 .bottom-section {
   margin-top: 166px;
@@ -289,6 +300,7 @@ p > span {
 }
 .bottom-photos div p {
   font-family: 'Oswald';
+  position: absolute;
   text-transform: uppercase;
   font-size: 1px;
   display: block;
@@ -369,10 +381,24 @@ p > span {
   .company-name:hover {
     color: white;
   }
-  .bottom-photos:hover {
-    opacity: 0.4;
-  }
   nav ul li:hover {
     text-decoration: underline;
   }
-  /* opaque backgrounds */
+  .bottom-photos div img:hover {
+    opacity: 0.4;
+  }
+  .ad img:hover {
+    opacity: 0.4;
+  }
+  .main h2:hover{
+    color: #A2B3BE;
+  }
+  #chic:hover{
+    color: #006FAE;
+  }
+  #aliqua:hover{
+    color: #A2B3BE;
+  }
+  header h1:hover{
+    color: #A2B3BE;
+  }
