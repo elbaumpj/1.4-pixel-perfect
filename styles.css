@@ -119,11 +119,15 @@ li > a {
 
 .author-social-media {
   text-align: center;
+  position: relative;
+  bottom: 5px;
 }
 aside > img {
   border-radius: 50%;
   height: 81px;
   width: 81px;
+  position: relative;
+  bottom: 13px;
 }
 .ad img {
   height: 295px;
@@ -171,17 +175,21 @@ h2 {
   text-transform: uppercase;
   font-family: 'Oswald';
   font-size: 59px;
-  padding-left: 37px;
+  padding-left: 10px;
   text-align: center;
 }
 p {
   font-family: 'Open Sans';
   color: #788288;
-  font-size: 16px;
+  font-size: 15px;
 }
 .author-tag {
   font-family: 'Open Sans';
   font-size: 10px;
+  position: relative;
+  bottom: 59px;
+  left: 172px;
+  word-spacing: 3px;
 }
 .blue {
   color: #00639F;
@@ -204,20 +212,27 @@ p > span {
 .blog-post {
   width: 600px;
   height: 670px;
-  line-height: 26px;
+  line-height: 27px;
+  margin-left: 163px;
+  position: relative;
+  bottom: 75px;
+  word-spacing: 0px;
 }
 .faux-buttons {
-  background-color: #97A6B1;
-  color: #D9D9D9;
   font-family: 'Open Sans';
 }
 .faux-buttons li {
   display: inline-block;
+  float: left;
+  text-align: center;
   padding: 0;
-  margin-left: 10px;
+  margin-right: 10px;
   width: 160px;
   height: 25px;
-}
+  background-color: #97A6B1;
+  color: white;
+  font-size: 12px;
+} /* had some help here from https://readlearncode.com/code-and-stuff/creating-buttons-from-ul-element/ */
 .faux-buttons i {
   background-color: #545E63;
   color: white;
@@ -225,8 +240,23 @@ p > span {
 .button {
   border: 1px solid transparent;
 }
-
+.radical {
+  font-size: 26px;
+  color: #006FAE;
+  text-transform: uppercase;
+  position: relative;
+  left: 26px;
+  word-spacing: 4px;
+}
+#radical-bar {
+  color: #D3D3D3;
+  position: relative;
+  top: 54px;
+}
 /* bottom section styling */
+.popular-posts {
+  height: 145px;
+}
 .bottom-section {
   margin-top: 166px;
   border-top: 1px solid #858B8E;
@@ -250,14 +280,18 @@ p > span {
   float: left;  /* was stumped on how to remove whitespace between images and used http://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
 }
 .copyright img {
+  position: relative;
+  top: 22px;
+  right: 7px;
   height: 35px;
   width: 48px;
   float: left;
 }
-.bottom-photos div h2 {
+.bottom-photos div p {
   font-family: 'Oswald';
   text-transform: uppercase;
   font-size: 1px;
+  display: block;
 }
 .bottom-section h3 {
   color: #033550;
@@ -271,18 +305,26 @@ p > span {
   background-color: #033550;
   height: 90px;
   clear: both;
+  padding: 0px 171px;
 }
 .copyright > span {
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Open Sans';
   color: #A2B3BE;
+  position: relative;
+  top: 34px;
+  left: 6px;
 }
 .copyright nav {
   text-align: right;
   font-size: 13px;
+  word-spacing: 3px;
 }
 .copyright nav ul {
   color: #A2B3BE;
+  position: relative;
+  bottom: 4px;
+  left: 10px;
   }
   /* Hover classes */
   .about:hover {
@@ -309,6 +351,9 @@ p > span {
   .author-name:hover {
     text-decoration: underline;
   }
+  .underline:hover {
+    text-decoration: none;
+  }
   .comments:hover {
     background-color: #006FAE;
   }
@@ -324,3 +369,10 @@ p > span {
   .company-name:hover {
     color: white;
   }
+  .bottom-photos:hover {
+    opacity: 0.4;
+  }
+  nav ul li:hover {
+    text-decoration: underline;
+  }
+  /* opaque backgrounds */
