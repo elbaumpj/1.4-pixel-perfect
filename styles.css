@@ -39,7 +39,6 @@ header:before {
   position: relative;
   padding-top: 10px;
 }
-
 nav ul {
   display: inline-block;
   list-style: none;
@@ -273,9 +272,7 @@ color: #006FAE;
   border-top: 1px solid #858B8E;
 }
 .bottom-photos {
-  position: relative;
-  display: block;
-  clear: both;
+  background-color: rgb(0, 96, 172);
 }
 .clearfix:after {
    content: ".";
@@ -284,11 +281,32 @@ color: #006FAE;
    height: 0;
    clear: both;
   } /* Clearfix trick taken from https://css-tricks.com/all-about-floats/ */
-.bottom-photos img {
+.bottom-photos div {
   position: relative; /*for absolute children, like the blue background*/
   height: 330px;
   width: 325px;
   float: left;  /* was stumped on how to remove whitespace between images and used http://stackoverflow.com/questions/7641678/use-css-to-remove-the-space-between-images */
+}
+/*took some cues from Marshall on the nth child selector; Mady helped with the idea of having the image as a background*/
+.bottom-photos div:nth-child(1) {
+  background-image: url("images/beach.jpg");
+  opacity: .3;
+  background-size: cover;
+}
+.bottom-photos div:nth-child(2) {
+  background-image: url("images/beer_flight.jpg");
+  opacity: .3;
+  background-size: cover;
+}
+.bottom-photos div:nth-child(3) {
+  background-image: url("images/zach.jpg");
+  opacity: .3;
+  background-size: cover;
+}
+.bottom-photos div:nth-child(4) {
+  background-image: url("images/liquor.jpg");
+  opacity: .3;
+  background-size: cover;
 }
 .copyright img {
   position: relative;
@@ -300,10 +318,13 @@ color: #006FAE;
 }
 .bottom-photos div p {
   font-family: 'Oswald';
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
-  font-size: 1px;
+  font-size: 29px;
   display: block;
+  top: 214px;
+  color: black;
+  z-index: 10;
 }
 .bottom-section h3 {
   color: #033550;
@@ -375,23 +396,11 @@ color: #006FAE;
   .share-post:hover {
     background-color: #006FAE;
   }
-  .sidebar-heading h6:hover {
-    color: #033550;
-  }
   .company-name:hover {
     color: white;
   }
   nav ul li:hover {
     text-decoration: underline;
-  }
-  .bottom-photos div img:hover {
-    opacity: 0.4;
-  }
-  .ad img:hover {
-    opacity: 0.4;
-  }
-  .main h2:hover{
-    color: #A2B3BE;
   }
   #chic:hover{
     color: #006FAE;
@@ -399,6 +408,10 @@ color: #006FAE;
   #aliqua:hover{
     color: #A2B3BE;
   }
-  header h1:hover{
-    color: #A2B3BE;
+  .bottom-photos div:hover{
+    opacity: 1.0;
+    color: white;
+  }
+  .bottom-photos div p:hover {
+    color: white;
   }
